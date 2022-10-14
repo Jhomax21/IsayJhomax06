@@ -45,20 +45,38 @@ table {
 
 /*-----------------------------------HOME-----------------------------------------*/
 body{
+    display: flex;
+    justify-content:center;
+    min-height:100vh;
     text-align: center;
     font: 300 20px/1.7 'Open Sans';
-    background: #fcfff8;
+    background: #e9e7dd;
     margin: 0;
+    align-items: center;
 }
+
+/*bodyf{
+
+    justify-content:center;
+    align-items: center;
+    min-height:100vh;
+    background-color:#e9e7dd;
+}*/
 .container{
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
+.sep{
+    position:fixed;
+    left: 0;
+    top: 650px;
+    right: 0; /*width: 100%*/
+}
 .header{
     background:#db8192;
     font-style: normal;
-    color:#5E693F;
+    color: black;
     letter-spacing: 0.02em;
     padding: 0.2rem 0;
     position:fixed;
@@ -67,8 +85,9 @@ body{
     right: 0; /*width: 100%*/
     z-index: 999; /*traer al frente*/
 }
+
 .header a{
-    color:#5E693F;
+    color:black;
     font-weight: 400;
     font-size: 20px;
     text-decoration: none;
@@ -87,7 +106,7 @@ body{
 }
 .nombre-logo{
     float: right;
-    font-weight: 350;
+    font-weight: 300;
     font-size: 16px;
     letter-spacing: 0.2px;
     padding: 1.2rem 0;
@@ -413,7 +432,7 @@ body{
     line-height:54px;
     text-shadow: 5px 2px 3px #d7dace;
     padding: 2rem 1rem;
-    color: #5c5d5a;
+    color: #c62744;
 }
 .about-team ul{
     margin: 0;
@@ -428,7 +447,7 @@ body{
 .about-team ul li figure img{
     border-radius: 20%;
     border: 1px solid;
-    border-color: #60b660;
+    border-color: #c62744;
     padding: 0.2rem;
     box-shadow: 1px 2px 4px #d7dace;
 }
@@ -529,15 +548,15 @@ textarea{
 
 /*-----------------------------------PLANS-----------------------------------------*/
 .plans{
-    padding-top: 6rem;
+    padding-top: 1rem;
 }
 .plans h2{
     font-weight: 600;
     font-size: 48px;
-    line-height:50px;
+    line-height:10px;
     text-shadow: 1px 2px 2px #d7dace;
     padding: 2rem 1rem;
-    color: #5c5d5a;
+    color: #fd3333;
 }
 .card-section{
     display: grid;
@@ -634,9 +653,9 @@ textarea{
         align-items: center;
     }
     .logo img{
-        max-width: 60px;
-        max-height: 50px;
-        padding:5px 5px;
+        max-width: 70px;
+        max-height: 90px;
+        padding:7px 7px;
     }
     .navbar ul li a{
         padding:3px 3px;
@@ -646,6 +665,7 @@ textarea{
         font-size: 0;
         letter-spacing: 0.2px;
         padding: 2px 0;
+        font-weight:bold;
     }
     .main{
         padding-top: 8rem;
@@ -936,9 +956,9 @@ textarea{
         font-weight: 600;
         font-size: 48px;
         line-height:50px;
-        text-shadow: 1px 2px 2px #d7dace;
+        text-shadow: 1px 2px 2px #79113a;
         padding: 2rem 1rem;
-        color: #5c5d5a;
+        color: #c62744;
     }
     .card-header{
         font-size: 28px;
@@ -962,12 +982,9 @@ textarea{
         padding: 5px 30px;
         font-size: 20px;
     }
-    bodyf{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    min-height:100vh;
-    background-color:#000;
+
+    audio1{
+        left: 1000px;
     }
     .box {
     position: relative;
@@ -975,7 +992,7 @@ textarea{
      left: 650px;
     height:150px;
     transform-style: preserve-3d;
-    animation: animate 35s linear infinite;
+    animation: animate 30s linear infinite;
     }
 
     @keyframes animate{
@@ -986,18 +1003,7 @@ textarea{
     transform: perspective(1000px) rotateY(360deg);
     }
     }
-    .box span{
-    border: 1px solid white;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        transform-origin: center;
-        transform-style: preserve-3d;
-        transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
-        -webkit-box-reflect: below 5px linear-gradient(transparent,transparent,#0004);
-    }
+
     .box span img {
     position: absolute;
     top: 0;
